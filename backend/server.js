@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 connectDB();
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Badminton Court Booking System API', version: '1.0.0' });
+    res.json({ message: 'Badminton Court Booking System API'});
 });
 
 app.use('/api/courts', courtRoutes);
@@ -39,5 +39,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
