@@ -1,0 +1,86 @@
+.my-bookings-page h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-section {
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.search-section h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.bookings-list h2 {
+  margin-bottom: 20px;
+}
+
+.booking-card {
+  margin-bottom: 20px;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+}
+
+.booking-header h3 {
+  margin: 0;
+  color: var(--primary);
+}
+
+.booking-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.detail-item {
+  font-size: 14px;
+}
+
+.detail-item strong {
+  color: var(--dark);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.detail-item ul {
+  margin: 4px 0 0 20px;
+  padding: 0;
+}
+
+.booking-pricing {
+  background: var(--light-gray);
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.price-row.total {
+  font-weight: bold;
+  font-size: 16px;
+  border-top: 2px solid var(--dark);
+  margin-top: 8px;
+  padding-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .booking-details {
+    grid-template-columns: 1fr;
+  }
+}
