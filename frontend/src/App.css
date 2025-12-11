@@ -39,6 +39,11 @@ header {
   color: var(--primary);
 }
 
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
 main {
   padding: 40px 0;
   min-height: calc(100vh - 200px);
